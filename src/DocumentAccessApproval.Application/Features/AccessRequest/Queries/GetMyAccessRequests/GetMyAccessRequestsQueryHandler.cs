@@ -1,4 +1,5 @@
 using DocumentAccessApproval.Application.Abstractions;
+using DocumentAccessApproval.Application.Features.AccessRequest.Queries.Dtos;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentAccessApprovalSystem", "DocumentAccessApprovalSystem\DocumentAccessApprovalSystem.csproj", "{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentAccessApproval.Domain", "src\DocumentAccessApproval.Domain\DocumentAccessApproval.Domain.csproj", "{EFE73C23-6E16-4999-8C0A-BE0ED22D8B7F}"
@@ -29,18 +27,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|x64.Build.0 = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Debug|x86.Build.0 = Debug|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|x64.ActiveCfg = Release|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|x64.Build.0 = Release|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|x86.ActiveCfg = Release|Any CPU
-		{D16A6FDD-9798-D0A9-5E0A-3DAEEC4116F1}.Release|x86.Build.0 = Release|Any CPU
 		{EFE73C23-6E16-4999-8C0A-BE0ED22D8B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EFE73C23-6E16-4999-8C0A-BE0ED22D8B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE73C23-6E16-4999-8C0A-BE0ED22D8B7F}.Debug|x64.ActiveCfg = Debug|Any CPU

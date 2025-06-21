@@ -7,6 +7,8 @@ namespace DocumentAccessApproval.Infrastructure.Persistence
     {
         public static void Seed(ApplicationDbContext context)
         {
+            context.Database.EnsureCreated();
+
             if (context.Users.Any())
                 return;
 

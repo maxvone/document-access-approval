@@ -1,6 +1,9 @@
 using DocumentAccessApproval.Application.Abstractions;
+using DocumentAccessApproval.Application.Common;
+using DocumentAccessApproval.Domain.Entities;
 using DocumentAccessApproval.Domain.Enums;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace DocumentAccessApproval.Application.Features.AccessRequest.Commands.CreateAccessRequest
 {
@@ -15,6 +18,11 @@ namespace DocumentAccessApproval.Application.Features.AccessRequest.Commands.Cre
 
         public async Task<Guid> Handle(CreateAccessRequestCommand request, CancellationToken cancellationToken)
         {
+            bool documentExists = await _context.Documents.AnyAsync(d => d.Id == request.DocumentId, cancellationToken);
+
+            if (!documentExists)
+                throw new NotFoundException(nameof(Document), request.DocumentId);
+
             var accessRequest = new Domain.Entities.AccessRequest
             {
                 Id = Guid.NewGuid(),
